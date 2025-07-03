@@ -1,0 +1,29 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/PointCloud2
+      Name: FilteredPoints
+      Enabled: true
+      Topic: /filtered_points
+      Queue Size: 10
+      Color Transformer: Intensity
+      Style: Points
+      Size (Pixels): 3
+      Alpha: 1.0
+  Fixed Frame: base_link
+  Global Options:
+    Background Color: [0.0, 0.0, 0.0]
+    Fixed Frame: base_link
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/FocusCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 10
+      Focal Point: [0, 0, 0]
+      Pitch: 0.785
+      Yaw: 0.785
