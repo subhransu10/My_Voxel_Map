@@ -1,0 +1,43 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Filtered Points
+      Enabled: true
+      Topic: /filtered_points
+      Queue Size: 10
+      Color Transformer: Intensity
+      Size (m): 0.05
+      Style: Points
+      Alpha: 1.0
+      Autocompute Intensity Bounds: true
+      Use Fixed Frame: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Voxel Occupancy Grid
+      Enabled: true
+      Topic: /voxel_occupancy_grid
+      Queue Size: 10
+      Color Transformer: Intensity
+      Size (m): 0.05
+      Style: Points
+      Alpha: 1.0
+      Autocompute Intensity Bounds: true
+      Use Fixed Frame: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+  Fixed Frame: base_link
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+  Global Options:
+    Background Color: [0, 0, 0]
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Value: true
